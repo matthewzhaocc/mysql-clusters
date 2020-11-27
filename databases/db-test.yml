@@ -10,5 +10,5 @@ spec:
                 targetRevision: HEAD
                 path: db-test
         destination:
-                server: https://135.181.122.121
+                server: https://135.181.122.121:6443
                 namespace: dbtest
