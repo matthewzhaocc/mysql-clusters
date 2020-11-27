@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+        name: dbtest
+        namespace: argocd
+spec:
+        project: default
+        source:
+                repoURL: https://github.com/matthewzhaocc/mysql-clusters
+                targetRevision: HEAD
+                path: db-test
+        destination:
+                server: https://135.181.122.121
+                namespace: dbtest
